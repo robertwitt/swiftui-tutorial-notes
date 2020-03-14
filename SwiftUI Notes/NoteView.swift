@@ -14,8 +14,10 @@ struct NoteView: View {
     var body: some View {
         VStack {
             TextField("Title", text: $note.title)
-            // TODO Implement text view
+            TextView(text: $note.content).border(Color.gray, width: 1)
         }
+        .navigationBarTitle(note.title)
+        .padding()
     }
 }
 
