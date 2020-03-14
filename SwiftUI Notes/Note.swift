@@ -8,10 +8,11 @@
 
 import Foundation
 
-class Note {
-    var title: String
-    var content: String
-    var isFavorite: Bool
+class Note: Identifiable, ObservableObject {
+    var id = UUID()
+    @Published var title: String
+    @Published var content: String
+    @Published var isFavorite: Bool
     
     init(title: String = "", content: String = "", isFavorite: Bool = false) {
         self.title = title
