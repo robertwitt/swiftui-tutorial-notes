@@ -13,7 +13,7 @@ class Note {
     var content: String
     var isFavorite: Bool
     
-    init(title: String, content: String, isFavorite: Bool) {
+    init(title: String = "", content: String = "", isFavorite: Bool = false) {
         self.title = title
         self.content = content
         self.isFavorite = isFavorite

@@ -19,3 +19,17 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct NoteCell: View {
+    var note: Note
+    
+    var body: some View {
+        HStack {
+            Text(note.title)
+            if note.isFavorite {
+                Spacer()
+                Image(systemName: "star.fill")
+            }
+        }
+    }
+}
