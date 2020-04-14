@@ -19,6 +19,7 @@
 		963DEBBF241D7C12003E47EC /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963DEBBE241D7C12003E47EC /* NotesManager.swift */; };
 		963DEBC1241D7EC5003E47EC /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963DEBC0241D7EC5003E47EC /* NoteView.swift */; };
 		963DEBC3241D81F4003E47EC /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963DEBC2241D81F4003E47EC /* TextView.swift */; };
+		96A76FBA24462E2700BA97D9 /* CreateNoteNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A76FB924462E2700BA97D9 /* CreateNoteNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		963DEBBE241D7C12003E47EC /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
 		963DEBC0241D7EC5003E47EC /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		963DEBC2241D81F4003E47EC /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		96A76FB924462E2700BA97D9 /* CreateNoteNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				963DEBA4241D7A54003E47EC /* AppDelegate.swift */,
 				963DEBA6241D7A54003E47EC /* SceneDelegate.swift */,
 				963DEBA8241D7A54003E47EC /* ContentView.swift */,
+				96A76FB924462E2700BA97D9 /* CreateNoteNavigationView.swift */,
 				963DEBC0241D7EC5003E47EC /* NoteView.swift */,
 				963DEBC2241D81F4003E47EC /* TextView.swift */,
 				963DEBBC241D7BBD003E47EC /* Note.swift */,
@@ -172,6 +175,7 @@
 				963DEBC3241D81F4003E47EC /* TextView.swift in Sources */,
 				963DEBA7241D7A54003E47EC /* SceneDelegate.swift in Sources */,
 				963DEBA9241D7A54003E47EC /* ContentView.swift in Sources */,
+				96A76FBA24462E2700BA97D9 /* CreateNoteNavigationView.swift in Sources */,
 				963DEBBD241D7BBD003E47EC /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

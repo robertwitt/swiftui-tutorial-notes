@@ -16,8 +16,21 @@ struct NoteView: View {
             TextField("Title", text: $note.title)
             TextView(text: $note.content).border(Color.gray, width: 1)
         }
+        .navigationBarItems(trailing: FavoriteButton(isFavorite: $note.isFavorite))
         .navigationBarTitle(note.title)
         .padding()
+    }
+}
+
+struct FavoriteButton: View {
+    @Binding var isFavorite: Bool
+    
+    var body: some View {
+        Button(action: {
+            self.isFavorite.toggle()
+        }) {
+            Image(systemName: self.isFavorite ? "star.fill" : "star")
+        }
     }
 }
 

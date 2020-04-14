@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-utils",
+        "repositoryURL": "https://github.com/robertwitt/swift-utils.git",
+        "state": {
+          "branch": "master",
+          "revision": "f3dec2cd4cad6c13df0a7efb9cf21ab2323c52a1",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

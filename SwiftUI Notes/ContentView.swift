@@ -9,9 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    var notesManager = NotesManager.shared
+    
+    @State private var showsCreateNoteSheet = false
+    
     var body: some View {
-        List(NotesManager.shared.notes) { note in
-            NoteCell(note: note)
+        NavigationView {
+            List(notesManager.notes) { note in
+                NavigationLink(destination: NoteView(note: note)) {
+                    NoteCell(note: note)
+                }
+            }
+            .navigationBarItems(trailing: Button(action: {
+                self.showsCreateNoteSheet = true
+            }) {
+                Image(systemName: "plus.circle")
+            })
+            .navigationBarTitle("Notes")
+        }
+        .sheet(isPresented: $showsCreateNoteSheet) {
+            CreateNoteNavigationView(isPresented: self.$showsCreateNoteSheet)
         }
     }
 }
@@ -23,7 +40,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct NoteCell: View {
-    var note: Note
+    @ObservedObject var note: Note
     
     var body: some View {
         HStack {
